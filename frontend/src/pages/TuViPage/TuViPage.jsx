@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TuViPage.css"; // Import your CSS styles
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000/api"; // Change port if needed
+const API_BASE = "https://vibestones-backend-test.vercel.app/api";
 
 function TuViPage() {
   const [activeTab, setActiveTab] = useState("info");

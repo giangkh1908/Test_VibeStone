@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 export const  connectDB = async () =>{
-
-    await mongoose.connect('mongodb+srv://giangkh1908:19082003@chat.ddabkrc.mongodb.net/EXE201').then(()=>console.log("DB Connected"));
-   
+    const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://giangkh1908:19082003@chat.ddabkrc.mongodb.net/EXE201';
+    
+    await mongoose.connect(mongoURI).then(() => console.log("DB Connected"));
 }
 
 export function getDB() {

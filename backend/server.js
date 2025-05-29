@@ -16,8 +16,8 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors({
   origin: [
-    'https://vibestones-frontend-6ho6pv0k9-giangkh1908s-projects.vercel.app',
-    'https://vibestones-admin-gfid4fjgc-giangkh1908s-projects.vercel.app',
+    'https://vibestones-frontend-test-giangkh1908s-projects.vercel.app',
+    'https://vibestones-frontend-test.vercel.app',
     'http://localhost:5173',
     'http://localhost:5174'
   ]
